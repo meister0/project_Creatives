@@ -1,0 +1,967 @@
+@font-face {
+  font-family: Gotham;
+  src: url("/fonts/Gotham Cyrillic/GothaProBol.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Myriad Pro;
+  src: url("/fonts/Myriad Pro/Myriad-Pro-Light.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("/fonts/Gotham Cyrillic/GothaProMed.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Gotham Book;
+  src: url("/fonts/Gotham Cyrillic/GOTHAMBOOK.woff");
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  color: #ffffff;
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+.header-bg {
+  width: 100%;
+  position: fixed;
+  height: 116px;
+  background-image: url("/img/main-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 1532px;
+}
+
+.header-container {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 1176px;
+  height: 116px;
+  padding: auto 10px auto 10px;
+}
+
+.header-container-small {
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav {
+  margin: 0 55px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 680px;
+}
+
+.header-social-links {
+  width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-logo {
+  margin-top: -10px;
+  width: 79px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header-social-links > a > i {
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.header-social-links > a > i:hover {
+  color: #999999;
+}
+
+a, a:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+ul {
+  padding: 0;
+}
+
+nav > a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Myriad Pro";
+  font-weight: 400;
+  font-size: 20px;
+  height: 106px;
+}
+
+nav > a:hover::before {
+  left: -15%;
+  width: 130%;
+}
+
+nav > a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background-color: #11749e;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.main {
+  padding-top: -117px;
+  height: 764px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-text, .main-scroll-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-text {
+  margin-top: 25px;
+}
+
+.main-text > h1 {
+  color: #f5f5f5;
+  font-family: Gotham;
+  font-size: 153px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -7px;
+}
+
+.main-text > h3 {
+  font-family: Gotham;
+  font-weight: 500;
+  color: #11749e;
+  font-size: 25px;
+  line-height: 51.19px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+}
+
+.main-scroll-down {
+  position: relative;
+  top: 140px;
+}
+
+.main-scroll-down > p {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.main-scroll-down > a {
+  position: relative;
+  bottom: -15px;
+}
+
+.bg-main-header {
+  background-image: url("/img/main-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 880px;
+}
+
+.about-agency {
+  padding-bottom: 28px;
+  background-color: #44749b;
+  height: 738px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-agency-first-row {
+  height: 176px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  background-image: url("/img/W.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-agency-first-row h2 {
+  font-family: Gotham;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45.06px;
+}
+
+.about-agency-second-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1163px;
+}
+
+.item {
+  margin-top: 68px;
+  height: 266px;
+}
+
+.item-header {
+  height: 14px;
+  margin-top: 20px;
+  margin-bottom: 34px;
+  text-align: center;
+  font-family: Gotham;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.item-text {
+  text-align: center;
+  width: 262px;
+  font-family: Gotham Book;
+  font-weight: 400;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-overflow: clip;
+  overflow: hidden;
+  height: 70px;
+}
+
+.item-logo {
+  display: block;
+  margin: auto;
+}
+
+.news {
+  background-color: #2c2c2c;
+}
+
+.news-container {
+  margin: auto;
+  width: 1650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news-bg {
+  max-width: 825px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news-block {
+  max-height: 474px;
+  max-width: 825px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 85px 100px 145px 250px;
+  width: 50%;
+  background-color: #272727;
+}
+
+.news-block-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+}
+
+.news-block-container p, .news-block-container h3 {
+  display: block;
+}
+
+.news-block__date {
+  width: 162px;
+  font-family: "Gotham Book";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 1px;
+}
+
+.news-block__header {
+  width: 210px;
+  height: 24px;
+  font-family: Gotham;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.news-block__text {
+  width: 475px;
+  height: 165px;
+  font-family: "Gotham Book";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-overflow: clip;
+  overflow: hidden;
+}
+
+.news-block:nth-last-child(1) {
+  padding-left: 100px;
+  padding-top: 85px;
+  color: #272727;
+  background-color: #f3f3f3;
+}
+
+@media (max-width: 1649px) {
+  .news-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .news-block {
+    width: 100%;
+  }
+}
+
+.blogs {
+  padding-bottom: 109px;
+}
+
+.blogs-header {
+  padding-top: 90px;
+}
+
+.blogs-header__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 176px;
+  background-image: url("/img/letter-B.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #272727;
+  font-family: Gotham;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 45.06px;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+
+.blogs-header__text {
+  color: #272727;
+  font-family: "Gotham Book";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.blogs-container {
+  padding-top: 76px;
+  width: 1170px;
+  height: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.blogs-blog {
+  width: 270px;
+  height: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blogs-blog__header {
+  color: #43739b;
+  font-family: Gotham;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-top: 35px;
+  margin-bottom: 12px;
+}
+
+.blogs-blog__text {
+  width: 270px;
+  height: 150px;
+  color: #272727;
+  font-family: "Gotham Book";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-overflow: wrap;
+  overflow: hidden;
+}
+
+.quick-actions {
+  height: 300px;
+  background-color: #43739b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+}
+
+.quick-actions-container {
+  width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quick-actions-action {
+  width: 550px;
+  height: 90px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.quick-actions-action__img {
+  width: 69px;
+}
+
+.quick-actions-action__text {
+  width: 453px;
+  height: 92px;
+  color: #ffffff;
+  font-family: "Gotham Book";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-overflow: wrap;
+  overflow: hidden;
+}
+
+.key-feature {
+  height: 100%;
+  background-image: url("/img/key-feature__bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.key-feature-container {
+  padding: 100px 0px 100px 0px;
+  width: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.key-feature-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.key-feature-main__header {
+  color: #ffffff;
+  font-family: Gotham;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.key-feature-main__text {
+  width: 469px;
+  height: 92px;
+  color: #ffffff;
+  font-family: "Gotham Book";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-overflow: wrap;
+  overflow: hidden;
+  margin-bottom: 68px;
+}
+
+.key-feature-main__list {
+  height: 163px;
+}
+
+.key-feature-main__list ul {
+  list-style-type: none;
+  padding-bottom: -24px;
+}
+
+.key-feature-main__list ul li {
+  margin-bottom: 24px;
+  padding: 10px 20px 10px 20px;
+  height: 38px;
+  width: 370px;
+  background-color: #43739b;
+  color: #ffffff;
+  font-family: Gotham;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.key-feature-main__list ul li:nth-child(2) {
+  width: 400px;
+}
+
+.key-feature-main__list ul li:nth-child(3) {
+  width: 430px;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-header {
+  padding-top: 90px;
+}
+
+.team-header__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 176px;
+  background-image: url("/img/letter-T.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #272727;
+  font-family: Gotham;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 45.06px;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+
+.team-header__text {
+  color: #272727;
+  font-family: "Gotham Book";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.team-main {
+  padding-top: 20px;
+  width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team-main-person {
+  width: 270px;
+  height: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team-main-person-info {
+  margin: auto;
+  margin-top: -50px;
+  background-color: #fff;
+  width: 216px;
+  height: 117px;
+}
+
+.team-main-person-info__header {
+  padding-top: 17px;
+  text-align: center;
+  color: #43739b;
+  font-family: Gotham;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.team-main-person-info__text {
+  color: #000000;
+  font-family: Gotham;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-overflow: wrap;
+  overflow: hidden;
+}
+
+.contact-area {
+  height: 850px;
+}
+
+.contact-area-form__main {
+  width: 1160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-area-form-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 144px;
+  height: 100%;
+  width: 100%;
+  background-image: url("/img/contact-area-form__bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-area-form__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/img/letter-C.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 182px;
+  color: #ffffff;
+  font-family: Gotham Book;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 76px;
+}
+
+.input {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Gotham Book";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 36px;
+  outline: none;
+}
+
+input {
+  margin-bottom: 39px;
+  padding: 20px;
+  width: 370px;
+  width: 370px;
+  height: 48px;
+}
+
+.submit {
+  width: 227px;
+  height: 64px;
+  background-color: #43739b;
+  border: none;
+  color: #ffffff;
+  font-family: Gotham;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: auto;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #345977;
+}
+
+textarea {
+  padding: 5px 10px 0px 10px;
+  width: 1160px;
+  height: 150px;
+  resize: none;
+  margin-bottom: 65px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: white;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.contact-area__map {
+  height: 20%;
+  background-image: url("/img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: -100px -55px;
+  background-size: 110%;
+}
+
+.contact-area__footer {
+  height: 100px;
+  background-color: #272727;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+}
+/*# sourceMappingURL=index.css.map */
